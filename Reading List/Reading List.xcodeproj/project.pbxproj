@@ -16,6 +16,7 @@
 		D6675F862285DDD500C29B41 /* ReadingListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6675F852285DDD500C29B41 /* ReadingListTableViewController.swift */; };
 		D6675F882285DDE700C29B41 /* BookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6675F872285DDE700C29B41 /* BookTableViewCell.swift */; };
 		D6675F8A2285E1B400C29B41 /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6675F892285E1B400C29B41 /* BookDetailViewController.swift */; };
+		D6675F8C2285E59E00C29B41 /* BookTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6675F8B2285E59E00C29B41 /* BookTableViewCellDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		D6675F852285DDD500C29B41 /* ReadingListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingListTableViewController.swift; sourceTree = "<group>"; };
 		D6675F872285DDE700C29B41 /* BookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCell.swift; sourceTree = "<group>"; };
 		D6675F892285E1B400C29B41 /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
+		D6675F8B2285E59E00C29B41 /* BookTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTableViewCellDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				D6675F832285C1DA00C29B41 /* BookController.swift */,
+				D6675F8B2285E59E00C29B41 /* BookTableViewCellDelegate.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					466941642110E22A00E7FF73 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -192,6 +196,7 @@
 				D6675F8A2285E1B400C29B41 /* BookDetailViewController.swift in Sources */,
 				D6675F842285C1DA00C29B41 /* BookController.swift in Sources */,
 				D6675F882285DDE700C29B41 /* BookTableViewCell.swift in Sources */,
+				D6675F8C2285E59E00C29B41 /* BookTableViewCellDelegate.swift in Sources */,
 				D6675F7D2285C06C00C29B41 /* Book.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,7 +350,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.michaelstoffer.Reading-List";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -363,7 +368,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.michaelstoffer.Reading-List";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -9,6 +9,11 @@
 import Foundation
 
 class BookController {
+    
+    init() {
+        self.loadFromPersistentStore()
+    }
+    
     private (set) var books: [Book] = []
     
     private var readingListURL: URL? {
@@ -18,12 +23,12 @@ class BookController {
         return documentsDirectory.appendingPathComponent("ReadingList.plist")
     }
     
-    private var readBooks: [Book] {
-        return books.filter { $0.hasBeenRead == true }
+    var readBooks: [Book] {
+        return self.books.filter { $0.hasBeenRead == true }
     }
     
-    private var unreadBooks: [Book] {
-        return books.filter { $0.hasBeenRead == false }
+    var unreadBooks: [Book] {
+        return self.books.filter { $0.hasBeenRead == false }
     }
     
     func createBook(withTitle title: String, withReasonToRead reasonToRead: String) {
