@@ -24,11 +24,11 @@ class BookController {
     }
     
     var readBooks: [Book] {
-        return self.books.filter { $0.hasBeenRead == true }
+        return self.books.sorted(by: { $0.title < $1.title }).filter { $0.hasBeenRead == true }
     }
     
     var unreadBooks: [Book] {
-        return self.books.filter { $0.hasBeenRead == false }
+        return self.books.sorted(by: { $0.title < $1.title }).filter { $0.hasBeenRead == false }
     }
     
     func createBook(withTitle title: String, withReasonToRead reasonToRead: String) {
